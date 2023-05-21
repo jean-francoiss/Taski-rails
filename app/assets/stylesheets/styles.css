@@ -1,0 +1,17 @@
+/* 
+@font-face {
+    font-family: "Hunger Games";
+    src: url("/assets/Hunger_Games");
+} */
+body{
+    margin: 42px;
+    background-color: rgb(192, 192, 192);
+}
+
+h1{
+    font-family: Arial, Gadget, sans-serif;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
