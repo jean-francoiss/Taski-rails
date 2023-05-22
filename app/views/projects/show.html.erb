@@ -7,4 +7,12 @@
   <%= link_to "Back to projects", projects_path %>
 
   <%= button_to "Destroy this project", @project, method: :delete %>
+
+  <div>
+    Tasks for this project
+    <%= link_to "Add a new task", new_project_task_path(project_id: @project.id) %>
+    <% @tasks.each do |task| %>
+      <p><%= link_to task.title, project_task_path(@project.id, task.id) %></p>
+    <%end%>
+  </div>
 </div>

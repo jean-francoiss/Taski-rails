@@ -10,11 +10,12 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body data-no-turbolink="true">
     <div class="logo">
       <%= image_tag("logo.png", width: "150px")  %>
     </div>
     <%=render "shared/nav"%>
+    <%=render "shared/alerts"%>
     <%= yield %>
   </body>
 </html>
